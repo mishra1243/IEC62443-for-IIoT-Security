@@ -14,7 +14,7 @@ You will need to have 3 users to replicate the setup, One admin user who is resp
 You can then copy the scripts as mentioned in the folder structure to the respective users, and download the required libraries to run the python scripts and if you want to automate the running part of the scripts you can make it as a system service and configure them to auto start with the right privilege.
 For node red dashboard and flows you can import the json flow and then edit the nodes to suit your respective needs.
 
-For any configuration related setup you can email me at harshguptag467@gmail.com
+For any configuration related setup you can email me at gopaljee.s@gmail.com
 You can see the demo's for the controls in the following shared folder - https://drive.google.com/drive/folders/1nJ4BMmjMXkSy4gyq90ffWE9QKU0tZhFn?usp=sharing
 
 
