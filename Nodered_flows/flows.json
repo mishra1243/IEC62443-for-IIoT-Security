@@ -1,0 +1,2004 @@
+[
+    {
+        "id": "f288426f9292be3f",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c82c7a0d5c259f20",
+        "type": "OpcUa-Item",
+        "z": "f288426f9292be3f",
+        "item": "ns=4;i=4",
+        "datatype": "Boolean",
+        "value": "",
+        "name": "Input 0",
+        "x": 450,
+        "y": 180,
+        "wires": [
+            [
+                "b2bb73b6be5fed9a"
+            ]
+        ]
+    },
+    {
+        "id": "b2bb73b6be5fed9a",
+        "type": "OpcUa-Client",
+        "z": "f288426f9292be3f",
+        "endpoint": "a4f3321bc29ea34c",
+        "action": "read",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": 10,
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "useTransport": false,
+        "maxChunkCount": 1,
+        "maxMessageSize": 8192,
+        "receiveBufferSize": 8192,
+        "sendBufferSize": 8192,
+        "name": "",
+        "x": 740,
+        "y": 180,
+        "wires": [
+            [
+                "bddcc5d016374359"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "53e86867c3bcd067",
+        "type": "OpcUa-Item",
+        "z": "f288426f9292be3f",
+        "item": "ns=4;i=5",
+        "datatype": "Boolean",
+        "value": "",
+        "name": "Input 1",
+        "x": 450,
+        "y": 260,
+        "wires": [
+            [
+                "2cb0f8ef91e81a48"
+            ]
+        ]
+    },
+    {
+        "id": "2cb0f8ef91e81a48",
+        "type": "OpcUa-Client",
+        "z": "f288426f9292be3f",
+        "endpoint": "a4f3321bc29ea34c",
+        "action": "read",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": 10,
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "useTransport": false,
+        "maxChunkCount": 1,
+        "maxMessageSize": 8192,
+        "receiveBufferSize": 8192,
+        "sendBufferSize": 8192,
+        "name": "",
+        "x": 740,
+        "y": 260,
+        "wires": [
+            [
+                "761dda288c8776d7"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "41c640ab019d1d4f",
+        "type": "OpcUa-Item",
+        "z": "f288426f9292be3f",
+        "item": "ns=4;i=6",
+        "datatype": "Boolean",
+        "value": "",
+        "name": "Output 0",
+        "x": 460,
+        "y": 340,
+        "wires": [
+            [
+                "4630b5800c5a7b26"
+            ]
+        ]
+    },
+    {
+        "id": "4630b5800c5a7b26",
+        "type": "OpcUa-Client",
+        "z": "f288426f9292be3f",
+        "endpoint": "a4f3321bc29ea34c",
+        "action": "read",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": 10,
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "useTransport": false,
+        "maxChunkCount": 1,
+        "maxMessageSize": 8192,
+        "receiveBufferSize": 8192,
+        "sendBufferSize": 8192,
+        "name": "",
+        "x": 740,
+        "y": 340,
+        "wires": [
+            [
+                "7239019f4f3b835f"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "012cc692a94671b7",
+        "type": "OpcUa-Item",
+        "z": "f288426f9292be3f",
+        "item": "ns=4;i=7",
+        "datatype": "Boolean",
+        "value": "",
+        "name": "Output 1",
+        "x": 460,
+        "y": 420,
+        "wires": [
+            [
+                "51b590b168730c71"
+            ]
+        ]
+    },
+    {
+        "id": "51b590b168730c71",
+        "type": "OpcUa-Client",
+        "z": "f288426f9292be3f",
+        "endpoint": "a4f3321bc29ea34c",
+        "action": "read",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": 10,
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "useTransport": false,
+        "maxChunkCount": 1,
+        "maxMessageSize": 8192,
+        "receiveBufferSize": 8192,
+        "sendBufferSize": 8192,
+        "name": "",
+        "x": 740,
+        "y": 420,
+        "wires": [
+            [
+                "28bf6c16373894b6"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "ac10ee777e8f92e7",
+        "type": "ui_switch",
+        "z": "f288426f9292be3f",
+        "name": "Write output 0 ",
+        "label": "Write output 0",
+        "tooltip": "",
+        "group": "3e7792b378b9e201",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 360,
+        "y": 500,
+        "wires": [
+            [
+                "d3cdcf62be3d60d4"
+            ]
+        ]
+    },
+    {
+        "id": "f32f8d0e2e8a7eaf",
+        "type": "ui_switch",
+        "z": "f288426f9292be3f",
+        "name": "Write output 1",
+        "label": "Write output 1",
+        "tooltip": "",
+        "group": "3e7792b378b9e201",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 360,
+        "y": 580,
+        "wires": [
+            [
+                "246c3a219c362c0e"
+            ]
+        ]
+    },
+    {
+        "id": "eb64957ce1f88a81",
+        "type": "OpcUa-Client",
+        "z": "f288426f9292be3f",
+        "endpoint": "a4f3321bc29ea34c",
+        "action": "write",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": 10,
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "useTransport": false,
+        "maxChunkCount": 1,
+        "maxMessageSize": 8192,
+        "receiveBufferSize": 8192,
+        "sendBufferSize": 8192,
+        "name": "",
+        "x": 960,
+        "y": 500,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "8ad80ae33df75d0a",
+        "type": "OpcUa-Client",
+        "z": "f288426f9292be3f",
+        "endpoint": "a4f3321bc29ea34c",
+        "action": "write",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": 10,
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "useTransport": false,
+        "maxChunkCount": 1,
+        "maxMessageSize": 8192,
+        "receiveBufferSize": 8192,
+        "sendBufferSize": 8192,
+        "name": "",
+        "x": 980,
+        "y": 580,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "d3cdcf62be3d60d4",
+        "type": "OpcUa-Item",
+        "z": "f288426f9292be3f",
+        "item": "ns=4;i=2",
+        "datatype": "Boolean",
+        "value": "",
+        "name": "Output 0",
+        "x": 620,
+        "y": 500,
+        "wires": [
+            [
+                "eb64957ce1f88a81"
+            ]
+        ]
+    },
+    {
+        "id": "246c3a219c362c0e",
+        "type": "OpcUa-Item",
+        "z": "f288426f9292be3f",
+        "item": "ns=4;i=3",
+        "datatype": "Boolean",
+        "value": "",
+        "name": "Output 1",
+        "x": 620,
+        "y": 580,
+        "wires": [
+            [
+                "8ad80ae33df75d0a"
+            ]
+        ]
+    },
+    {
+        "id": "bd7c8ced56d0ea65",
+        "type": "inject",
+        "z": "f288426f9292be3f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 180,
+        "wires": [
+            [
+                "c82c7a0d5c259f20"
+            ]
+        ]
+    },
+    {
+        "id": "cc3051cfb40b25bd",
+        "type": "inject",
+        "z": "f288426f9292be3f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.2",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 260,
+        "wires": [
+            [
+                "53e86867c3bcd067"
+            ]
+        ]
+    },
+    {
+        "id": "ffb6132f64a7f835",
+        "type": "inject",
+        "z": "f288426f9292be3f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.2",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 340,
+        "wires": [
+            [
+                "41c640ab019d1d4f"
+            ]
+        ]
+    },
+    {
+        "id": "055d8f8328919af3",
+        "type": "inject",
+        "z": "f288426f9292be3f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.2",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 420,
+        "wires": [
+            [
+                "012cc692a94671b7"
+            ]
+        ]
+    },
+    {
+        "id": "7239019f4f3b835f",
+        "type": "function",
+        "z": "f288426f9292be3f",
+        "name": "function 1",
+        "func": "var booleanValue = msg.payload; // Assuming payload is the boolean value\nmsg.payload = booleanValue ? \"on\" : \"off\"; // Prepare message for LED\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 340,
+        "wires": [
+            [
+                "aad4bee4a9528179"
+            ]
+        ]
+    },
+    {
+        "id": "aad4bee4a9528179",
+        "type": "ui_template",
+        "z": "f288426f9292be3f",
+        "group": "3e7792b378b9e201",
+        "name": "Output 0",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "format": "<div style=\"text-align: center; margin-top: 10px;\">\n    <!-- LED Indicator -->\n    <div id=\"led\" style=\"width: 60px; height: 60px; border-radius: 50%; background: grey; display: inline-block;\"></div>\n    <br>\n    <!-- Text Label -->\n    <span id=\"deviceLabel\" style=\"font-size: 14px; color: black; margin-top: 5px; display: block;\">Output 0</span>\n</div>\n\n<script>\n(function(scope) {\n    scope.$watch('msg.payload', function(value) {\n        var led = document.getElementById(\"led\");\n        if (value === \"on\") {\n            led.style.backgroundColor = \"green\";\n        } else {\n            led.style.backgroundColor = \"red\";\n        }\n\n        // Optionally, update the text label based on the value\n        // var deviceLabel = document.getElementById(\"deviceLabel\");\n        // deviceLabel.innerText = \"Device: \" + (value === \"on\" ? \"Active\" : \"Inactive\");\n    });\n})(scope);\n</script>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1240,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "761dda288c8776d7",
+        "type": "function",
+        "z": "f288426f9292be3f",
+        "name": "function 2",
+        "func": "var booleanValue = msg.payload; // Assuming payload is the boolean value\nmsg.payload = booleanValue ? \"on\" : \"off\"; // Prepare message for LED\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 260,
+        "wires": [
+            [
+                "a1944d0b1671d260"
+            ]
+        ]
+    },
+    {
+        "id": "bddcc5d016374359",
+        "type": "function",
+        "z": "f288426f9292be3f",
+        "name": "function 3",
+        "func": "var booleanValue = msg.payload; // Assuming payload is the boolean value\nmsg.payload = booleanValue ? \"on\" : \"off\"; // Prepare message for LED\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 180,
+        "wires": [
+            [
+                "a7c88b243bd341b4"
+            ]
+        ]
+    },
+    {
+        "id": "28bf6c16373894b6",
+        "type": "function",
+        "z": "f288426f9292be3f",
+        "name": "function 4",
+        "func": "var booleanValue = msg.payload; // Assuming payload is the boolean value\nmsg.payload = booleanValue ? \"on\" : \"off\"; // Prepare message for LED\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 420,
+        "wires": [
+            [
+                "664fb2b57bc79dc8"
+            ]
+        ]
+    },
+    {
+        "id": "664fb2b57bc79dc8",
+        "type": "ui_template",
+        "z": "f288426f9292be3f",
+        "group": "3e7792b378b9e201",
+        "name": "Output 1",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "format": "<div style=\"text-align: center; margin-top: 10px;\">\n    <!-- LED Indicator -->\n    <div id=\"Output1_led\" style=\"width: 60px; height: 60px; border-radius: 50%; background: grey; display: inline-block;\"></div>\n    <br>\n    <!-- Text Label -->\n    <span id=\"deviceLabel\" style=\"font-size: 14px; color: black; margin-top: 5px; display: block;\">Output 1</span>\n</div>\n\n<script>\n(function(scope) {\n    scope.$watch('msg.payload', function(value) {\n        var led = document.getElementById(\"Output1_led\");\n        if (value === \"on\") {\n            led.style.backgroundColor = \"green\";\n        } else {\n            led.style.backgroundColor = \"red\";\n        }\n\n        // Optionally, update the text label based on the value\n        // var deviceLabel = document.getElementById(\"deviceLabel\");\n        // deviceLabel.innerText = \"Device: \" + (value === \"on\" ? \"Active\" : \"Inactive\");\n    });\n})(scope);\n</script>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1240,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a1944d0b1671d260",
+        "type": "ui_template",
+        "z": "f288426f9292be3f",
+        "group": "3e7792b378b9e201",
+        "name": "Input 1",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "format": "<div style=\"text-align: center; margin-top: 10px;\">\n    <!-- LED Indicator -->\n    <div id=\"Input1_led\" style=\"width: 60px; height: 60px; border-radius: 50%; background: grey; display: inline-block;\"></div>\n    <br>\n    <!-- Text Label -->\n    <span id=\"deviceLabel\" style=\"font-size: 14px; color: black; margin-top: 5px; display: block;\">Input 1</span>\n</div>\n\n<script>\n(function(scope) {\n    scope.$watch('msg.payload', function(value) {\n        var led = document.getElementById(\"Input1_led\");\n        if (value === \"on\") {\n            led.style.backgroundColor = \"green\";\n        } else {\n            led.style.backgroundColor = \"red\";\n        }\n\n        // Optionally, update the text label based on the value\n        // var deviceLabel = document.getElementById(\"deviceLabel\");\n        // deviceLabel.innerText = \"Device: \" + (value === \"on\" ? \"Active\" : \"Inactive\");\n    });\n})(scope);\n</script>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1230,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a7c88b243bd341b4",
+        "type": "ui_template",
+        "z": "f288426f9292be3f",
+        "group": "3e7792b378b9e201",
+        "name": "Input 0",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "format": "<div style=\"text-align: center; margin-top: 10px;\">\n    <!-- LED Indicator -->\n    <div id=\"Input0_led\" style=\"width: 60px; height: 60px; border-radius: 50%; background: grey; display: inline-block;\"></div>\n    <br>\n    <!-- Text Label -->\n    <span id=\"deviceLabel\" style=\"font-size: 14px; color: black; margin-top: 5px; display: block;\">Input 0</span>\n</div>\n\n<script>\n(function(scope) {\n    scope.$watch('msg.payload', function(value) {\n        var led = document.getElementById(\"Input0_led\");\n        if (value === \"on\") {\n            led.style.backgroundColor = \"green\";\n        } else {\n            led.style.backgroundColor = \"red\";\n        }\n\n        // Optionally, update the text label based on the value\n        // var deviceLabel = document.getElementById(\"deviceLabel\");\n        // deviceLabel.innerText = \"Device: \" + (value === \"on\" ? \"Active\" : \"Inactive\");\n    });\n})(scope);\n</script>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1230,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "48117b57f43dff64",
+        "type": "mqtt in",
+        "z": "f288426f9292be3f",
+        "name": "Case status",
+        "topic": "control/signal1",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "1bf0be44a520c5b0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 660,
+        "wires": [
+            [
+                "9dfd7923ade2ab77"
+            ]
+        ]
+    },
+    {
+        "id": "4f143ff7fa0ec321",
+        "type": "mqtt in",
+        "z": "f288426f9292be3f",
+        "name": "Integrity of the firmware",
+        "topic": "control/signal2",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "1bf0be44a520c5b0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 740,
+        "wires": [
+            [
+                "304994581b6ca093"
+            ]
+        ]
+    },
+    {
+        "id": "075d5c4738b02ffd",
+        "type": "mqtt in",
+        "z": "f288426f9292be3f",
+        "name": "Admin login status",
+        "topic": "control/signal3",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "1bf0be44a520c5b0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 820,
+        "wires": [
+            [
+                "d9637d5818c83426"
+            ]
+        ]
+    },
+    {
+        "id": "ead091c3963ab172",
+        "type": "mqtt in",
+        "z": "f288426f9292be3f",
+        "name": "Low_level user login status",
+        "topic": "control/signal4",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "1bf0be44a520c5b0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 900,
+        "wires": [
+            [
+                "a9b2449d0f033d8c"
+            ]
+        ]
+    },
+    {
+        "id": "902c931b55d1db81",
+        "type": "mqtt in",
+        "z": "f288426f9292be3f",
+        "name": "Alert status",
+        "topic": "control/signal5",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "1bf0be44a520c5b0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 980,
+        "wires": [
+            [
+                "e5a61e2f825f6cb7"
+            ]
+        ]
+    },
+    {
+        "id": "eb03f92e683e46f7",
+        "type": "mqtt in",
+        "z": "f288426f9292be3f",
+        "name": "Any remark",
+        "topic": "control/text_message",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "1bf0be44a520c5b0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 1060,
+        "wires": [
+            [
+                "f7638bdd26a3e0d1"
+            ]
+        ]
+    },
+    {
+        "id": "9dfd7923ade2ab77",
+        "type": "function",
+        "z": "f288426f9292be3f",
+        "name": "function 5",
+        "func": "// Input assumption: msg.payload is a string \"true\" or \"false\" from MQTT\nvar stringValue = msg.payload; // Assuming payload is a string representation of boolean\n\n// Convert string to boolean\nvar booleanValue = (stringValue === \"True\");\n\n// Translate boolean to \"on\" or \"off\"\nmsg.payload = booleanValue ? \"on\" : \"off\"; // \"on\" if true, \"off\" if false\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 660,
+        "wires": [
+            [
+                "ec9dee38db8390c6"
+            ]
+        ]
+    },
+    {
+        "id": "304994581b6ca093",
+        "type": "function",
+        "z": "f288426f9292be3f",
+        "name": "function 6",
+        "func": "// Input assumption: msg.payload is a string \"true\" or \"false\" from MQTT\nvar stringValue = msg.payload; // Assuming payload is a string representation of boolean\n\n// Convert string to boolean\nvar booleanValue = (stringValue === \"True\");\n\n// Translate boolean to \"on\" or \"off\"\nmsg.payload = booleanValue ? \"on\" : \"off\"; // \"on\" if true, \"off\" if false\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 740,
+        "wires": [
+            [
+                "73ac10683833f9b7"
+            ]
+        ]
+    },
+    {
+        "id": "ec9dee38db8390c6",
+        "type": "ui_template",
+        "z": "f288426f9292be3f",
+        "group": "445b6cf414ba256b",
+        "name": "case status",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "format": "<div style=\"text-align: center; margin-top: 10px;\">\n    <!-- LED Indicator for Case Status -->\n    <div id=\"Case_status\" style=\"width: 60px; height: 60px; border-radius: 50%; background: grey; display: inline-block;\"></div>\n    <br>\n    <!-- Text Label -->\n    <span id=\"deviceLabel\" style=\"font-size: 14px; color: black; margin-top: 5px; display: block;\">Physical Integrity</span>\n</div>\n\n<script>\n(function(scope) {\n    var blinkInterval;  // Variable to store the blink interval ID\n    var isBlinking = false;  // Variable to track if currently blinking\n\n    // Function to start blinking the LED\n    function startBlinking() {\n        if (!isBlinking) {\n            var led = document.getElementById(\"Case_status\");\n            var isRed = false;\n            blinkInterval = setInterval(function() {\n                led.style.backgroundColor = isRed ? \"grey\" : \"red\";\n                isRed = !isRed;\n            }, 500);  // Blink interval in milliseconds\n            isBlinking = true;\n        }\n    }\n\n    // Function to stop blinking the LED\n    function stopBlinking() {\n        if (isBlinking) {\n            clearInterval(blinkInterval);\n            document.getElementById(\"Case_status\").style.backgroundColor = \"green\";\n            isBlinking = false;\n        }\n    }\n\n    scope.$watch('msg.payload', function(value) {\n        if (value === \"on\") {\n            stopBlinking();\n        } else {\n            startBlinking();\n        }\n\n        // Optionally, update the text label based on the value\n        // var deviceLabel = document.getElementById(\"deviceLabel\");\n        // deviceLabel.innerText = \"Case Status: \" + (value === \"on\" ? \"Active\" : \"Inactive\");\n    });\n})(scope);\n</script>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 790,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "73ac10683833f9b7",
+        "type": "ui_template",
+        "z": "f288426f9292be3f",
+        "group": "445b6cf414ba256b",
+        "name": "firmware status",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "format": "<div style=\"text-align: center; margin-top: 10px;\">\n    <!-- LED Indicator for Firmware Integrity -->\n    <div id=\"firmware\" style=\"width: 60px; height: 60px; border-radius: 50%; background: grey; display: inline-block;\"></div>\n    <br>\n    <!-- Text Label -->\n    <span id=\"deviceLabel\" style=\"font-size: 14px; color: black; margin-top: 5px; display: block;\">Firmware Integrity</span>\n</div>\n\n<script>\n(function(scope) {\n    var firmwareBlinkInterval;  // Variable to store the blink interval ID\n    var isBlinking = false;     // Variable to track if currently blinking\n\n    // Function to start blinking the LED\n    function startBlinking() {\n        if (!isBlinking) {\n            var led = document.getElementById(\"firmware\");\n            var isRed = false;\n            firmwareBlinkInterval = setInterval(function() {\n                led.style.backgroundColor = isRed ? \"grey\" : \"red\";\n                isRed = !isRed;\n            }, 500);  // Blink interval in milliseconds\n            isBlinking = true;\n        }\n    }\n\n    // Function to stop blinking the LED\n    function stopBlinking() {\n        if (isBlinking) {\n            clearInterval(firmwareBlinkInterval);\n            document.getElementById(\"firmware\").style.backgroundColor = \"green\";\n            isBlinking = false;\n        }\n    }\n\n    scope.$watch('msg.payload', function(value) {\n        if (value === \"on\") {\n            stopBlinking();\n        } else {\n            startBlinking();\n        }\n\n        // Optionally, update the text label based on the value\n        // var deviceLabel = document.getElementById(\"deviceLabel\");\n        // deviceLabel.innerText = \"Firmware: \" + (value === \"on\" ? \"Valid\" : \"Invalid\");\n    });\n})(scope);\n</script>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 800,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8fd76ae2c02506bc",
+        "type": "ui_template",
+        "z": "f288426f9292be3f",
+        "group": "445b6cf414ba256b",
+        "name": "admin status",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div style=\"text-align: center; margin-top: 10px;\">\n    <!-- LED Indicator -->\n    <div id=\"Ad_status\" style=\"width: 60px; height: 60px; border-radius: 50%; background: grey; display: inline-block;\"></div>\n    <br>\n    <!-- Text Label -->\n    <span id=\"deviceLabel\" style=\"font-size: 14px; color: black; margin-top: 5px; display: block;\">Admin status</span>\n</div>\n\n<script>\n(function(scope) {\n    scope.$watch('msg.payload', function(value) {\n        var led = document.getElementById(\"Ad_status\");\n        if (value === \"on\") {\n            led.style.backgroundColor = \"red\";\n        } else {\n            led.style.backgroundColor = \"green\";\n        }\n\n        // Optionally, update the text label based on the value\n        // var deviceLabel = document.getElementById(\"deviceLabel\");\n        // deviceLabel.innerText = \"Device: \" + (value === \"on\" ? \"Active\" : \"Inactive\");\n    });\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 790,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "98035ff909e52975",
+        "type": "ui_template",
+        "z": "f288426f9292be3f",
+        "group": "445b6cf414ba256b",
+        "name": "local status",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "format": "<div style=\"text-align: center; margin-top: 10px;\">\n    <!-- LED Indicator -->\n    <div id=\"LLU_status\" style=\"width: 60px; height: 60px; border-radius: 50%; background: grey; display: inline-block;\"></div>\n    <br>\n    <!-- Text Label -->\n    <span id=\"deviceLabel\" style=\"font-size: 14px; color: black; margin-top: 5px; display: block;\">Local user status</span>\n</div>\n\n<script>\n(function(scope) {\n    scope.$watch('msg.payload', function(value) {\n        var led = document.getElementById(\"LLU_status\");\n        if (value === \"on\") {\n            led.style.backgroundColor = \"red\";\n        } else {\n            led.style.backgroundColor = \"green\";\n        }\n\n        // Optionally, update the text label based on the value\n        // var deviceLabel = document.getElementById(\"deviceLabel\");\n        // deviceLabel.innerText = \"Device: \" + (value === \"on\" ? \"Active\" : \"Inactive\");\n    });\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 790,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c69f82e6f43d6585",
+        "type": "ui_template",
+        "z": "f288426f9292be3f",
+        "group": "445b6cf414ba256b",
+        "name": "alert",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "format": "<div style=\"text-align: center; margin-top: 10px;\">\n    <!-- LED Indicator for Alert Status -->\n    <div id=\"alert_status\" style=\"width: 60px; height: 60px; border-radius: 50%; background: grey; display: inline-block;\"></div>\n    <br>\n    <!-- Text Label -->\n    <span id=\"auth\" style=\"font-size: 14px; color: black; margin-top: 5px; display: block;\">Multiple Failed Authentications</span>\n</div>\n\n<script>\n(function(scope) {\n    // Variable to store the blink interval ID\n    var alertBlinkInterval;\n\n    // Function to start blinking the LED\n    function startBlinking() {\n        var led = document.getElementById(\"alert_status\");\n        var isRed = false;\n        alertBlinkInterval = setInterval(function() {\n            led.style.backgroundColor = isRed ? \"grey\" : \"red\";\n            isRed = !isRed;\n        }, 500);  // Blink interval in milliseconds\n    }\n\n    // Function to stop blinking the LED\n    function stopBlinking() {\n        clearInterval(alertBlinkInterval);\n        document.getElementById(\"alert_status\").style.backgroundColor = \"green\";\n    }\n\n    scope.$watch('msg.payload', function(value) {\n        if (value === \"on\") {\n            stopBlinking();\n        } else {\n            startBlinking();\n        }\n\n        // Optionally, update the text label based on the value\n        var deviceLabel = document.getElementById(\"auth\");\n        deviceLabel.innerText = \"Alert Status: \" + (value === \"on\" ? \"Normal\" : \"Alert\");\n    });\n})(scope);\n</script>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 770,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f7638bdd26a3e0d1",
+        "type": "ui_text",
+        "z": "f288426f9292be3f",
+        "group": "956a28001c053485",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Mqtt remark",
+        "label": "Device Status",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 790,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "d9637d5818c83426",
+        "type": "function",
+        "z": "f288426f9292be3f",
+        "name": "function 7",
+        "func": "// Input assumption: msg.payload is a string \"true\" or \"false\" from MQTT\nvar stringValue = msg.payload; // Assuming payload is a string representation of boolean\n\n// Convert string to boolean\nvar booleanValue = (stringValue === \"True\");\n\n// Translate boolean to \"on\" or \"off\"\nmsg.payload = booleanValue ? \"on\" : \"off\"; // \"on\" if true, \"off\" if false\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 820,
+        "wires": [
+            [
+                "8fd76ae2c02506bc"
+            ]
+        ]
+    },
+    {
+        "id": "a9b2449d0f033d8c",
+        "type": "function",
+        "z": "f288426f9292be3f",
+        "name": "function 8",
+        "func": "// Input assumption: msg.payload is a string \"true\" or \"false\" from MQTT\nvar stringValue = msg.payload; // Assuming payload is a string representation of boolean\n\n// Convert string to boolean\nvar booleanValue = (stringValue === \"True\");\n\n// Translate boolean to \"on\" or \"off\"\nmsg.payload = booleanValue ? \"on\" : \"off\"; // \"on\" if true, \"off\" if false\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 900,
+        "wires": [
+            [
+                "98035ff909e52975"
+            ]
+        ]
+    },
+    {
+        "id": "e5a61e2f825f6cb7",
+        "type": "function",
+        "z": "f288426f9292be3f",
+        "name": "function 9",
+        "func": "// Input assumption: msg.payload is a string \"true\" or \"false\" from MQTT\nvar stringValue = msg.payload; // Assuming payload is a string representation of boolean\n\n// Convert string to boolean\nvar booleanValue = (stringValue === \"True\");\n\n// Translate boolean to \"on\" or \"off\"\nmsg.payload = booleanValue ? \"on\" : \"off\"; // \"on\" if true, \"off\" if false\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 980,
+        "wires": [
+            [
+                "c69f82e6f43d6585"
+            ]
+        ]
+    },
+    {
+        "id": "c5d20c6ab553698d",
+        "type": "file in",
+        "z": "f288426f9292be3f",
+        "name": "",
+        "filename": "/home/z004ymtp/Logs/logs.txt",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 410,
+        "y": 1280,
+        "wires": [
+            [
+                "e5f1f59beab21e39"
+            ]
+        ]
+    },
+    {
+        "id": "60a2ec835a85074c",
+        "type": "inject",
+        "z": "f288426f9292be3f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 1280,
+        "wires": [
+            [
+                "c5d20c6ab553698d"
+            ]
+        ]
+    },
+    {
+        "id": "e5f1f59beab21e39",
+        "type": "ui_template",
+        "z": "f288426f9292be3f",
+        "group": "34c5f628c5edf8de",
+        "name": "text",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    .scrollable-text {\n        width: 100%;\n        height: 300px;\n        /* Fixed maximum height */\n        overflow-y: auto;\n        /* Enable vertical scrolling */\n        overflow-x: hidden;\n        /* Prevent horizontal scrolling */\n        padding: 10px;\n        box-sizing: border-box;\n        border: 1px solid #ddd;\n        background-color: #f9f9f9;\n        font-family: Arial, sans-serif;\n        font-size: 14px;\n        white-space: pre-wrap;\n        /* Preserve whitespace and line breaks */\n    }\n</style>\n\n<div class=\"scrollable-text\" ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 790,
+        "y": 1280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e4520dafd43a264e",
+        "type": "file",
+        "z": "f288426f9292be3f",
+        "name": "",
+        "filename": "/home/z004ymtp/Logs/logs.txt",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 450,
+        "y": 1320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "88b86cfdec3eda39",
+        "type": "ui_button",
+        "z": "f288426f9292be3f",
+        "name": "",
+        "group": "34c5f628c5edf8de",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Reset status logs",
+        "tooltip": "",
+        "color": "black",
+        "bgcolor": "red",
+        "className": "",
+        "icon": "",
+        "payload": "Logs reseted",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 130,
+        "y": 1320,
+        "wires": [
+            [
+                "e4520dafd43a264e"
+            ]
+        ]
+    },
+    {
+        "id": "6f88e619f32aad01",
+        "type": "file in",
+        "z": "f288426f9292be3f",
+        "name": "",
+        "filename": "/home/z004ymtp/Logs/network_logs.txt",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 410,
+        "y": 1380,
+        "wires": [
+            [
+                "66d9eec46ceefeea"
+            ]
+        ]
+    },
+    {
+        "id": "19898751e3298a8e",
+        "type": "inject",
+        "z": "f288426f9292be3f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 1380,
+        "wires": [
+            [
+                "6f88e619f32aad01"
+            ]
+        ]
+    },
+    {
+        "id": "66d9eec46ceefeea",
+        "type": "ui_template",
+        "z": "f288426f9292be3f",
+        "group": "d513555b1be6283a",
+        "name": "text",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    .scrollable-text {\n        width: 100%;\n        height: 300px;\n        /* Fixed maximum height */\n        overflow-y: auto;\n        /* Enable vertical scrolling */\n        overflow-x: hidden;\n        /* Prevent horizontal scrolling */\n        padding: 10px;\n        box-sizing: border-box;\n        border: 1px solid #ddd;\n        background-color: #f9f9f9;\n        font-family: Arial, sans-serif;\n        font-size: 14px;\n        white-space: pre-wrap;\n        /* Preserve whitespace and line breaks */\n    }\n</style>\n\n<div class=\"scrollable-text\" ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 790,
+        "y": 1380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6d44e8c2cf045ed8",
+        "type": "file",
+        "z": "f288426f9292be3f",
+        "name": "",
+        "filename": "/home/z004ymtp/Logs/network_logs.txt",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 510,
+        "y": 1440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f5a86402bf89573d",
+        "type": "ui_button",
+        "z": "f288426f9292be3f",
+        "name": "",
+        "group": "d513555b1be6283a",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Reset network logs",
+        "tooltip": "",
+        "color": "black",
+        "bgcolor": "red",
+        "className": "",
+        "icon": "",
+        "payload": "Logs reseted",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 130,
+        "y": 1440,
+        "wires": [
+            [
+                "6d44e8c2cf045ed8"
+            ]
+        ]
+    },
+    {
+        "id": "05bd42ceadb6739b",
+        "type": "ui_ui_control",
+        "z": "f288426f9292be3f",
+        "name": "",
+        "events": "connect",
+        "x": 100,
+        "y": 580,
+        "wires": [
+            [
+                "f32f8d0e2e8a7eaf"
+            ]
+        ]
+    },
+    {
+        "id": "ff8c6d2970ebb9cb",
+        "type": "ui_ui_control",
+        "z": "f288426f9292be3f",
+        "name": "",
+        "events": "all",
+        "x": 100,
+        "y": 500,
+        "wires": [
+            [
+                "ac10ee777e8f92e7"
+            ]
+        ]
+    },
+    {
+        "id": "fc3ac9d51183ee74",
+        "type": "file in",
+        "z": "f288426f9292be3f",
+        "name": "",
+        "filename": "/home/z004ymtp/Logs/auth_log.txt",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 380,
+        "y": 1140,
+        "wires": [
+            [
+                "d54916492e6c34d2"
+            ]
+        ]
+    },
+    {
+        "id": "43e110818b92e068",
+        "type": "ui_text",
+        "z": "f288426f9292be3f",
+        "group": "956a28001c053485",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "login remark",
+        "label": "Login Status",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1090,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "b3445c0ee2793f9f",
+        "type": "inject",
+        "z": "f288426f9292be3f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 1140,
+        "wires": [
+            [
+                "fc3ac9d51183ee74"
+            ]
+        ]
+    },
+    {
+        "id": "d54916492e6c34d2",
+        "type": "function",
+        "z": "f288426f9292be3f",
+        "name": "read top line",
+        "func": "// Read the incoming message containing the file content\nvar fileContent = msg.payload;\n\n// Split the file content into lines\nvar lines = fileContent.trim().split('\\n');\n\n// Extract the top line (most recent entry)\nvar topLine = lines[0];\n\n// Create a new message object with only the top line\nmsg.payload = topLine;\n\n// Return the modified message object\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 1140,
+        "wires": [
+            [
+                "43e110818b92e068"
+            ]
+        ]
+    },
+    {
+        "id": "138d019015da7f26",
+        "type": "file in",
+        "z": "f288426f9292be3f",
+        "name": "",
+        "filename": "/home/z004ymtp/Logs/network_logs.txt",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 390,
+        "y": 1200,
+        "wires": [
+            [
+                "0108f443f8a416cc"
+            ]
+        ]
+    },
+    {
+        "id": "efd92d7d6ddb35d3",
+        "type": "inject",
+        "z": "f288426f9292be3f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 1200,
+        "wires": [
+            [
+                "138d019015da7f26"
+            ]
+        ]
+    },
+    {
+        "id": "0108f443f8a416cc",
+        "type": "function",
+        "z": "f288426f9292be3f",
+        "name": "read top line",
+        "func": "// Read the incoming message containing the file content\nvar fileContent = msg.payload;\n\n// Split the file content into lines\nvar lines = fileContent.trim().split('\\n');\n\n// Extract the top line (most recent entry)\nvar topLine = lines[0];\n\n// Create a new message object with only the top line\nmsg.payload = topLine;\n\n// Return the modified message object\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 1200,
+        "wires": [
+            [
+                "1b03ac76ebc74793"
+            ]
+        ]
+    },
+    {
+        "id": "1b03ac76ebc74793",
+        "type": "ui_text",
+        "z": "f288426f9292be3f",
+        "group": "956a28001c053485",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "Network Remark",
+        "label": "Network Status",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1070,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "7bd27f57eba7de33",
+        "type": "file in",
+        "z": "f288426f9292be3f",
+        "name": "",
+        "filename": "/home/z004ymtp/Logs/auth_log.txt",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 500,
+        "y": 1500,
+        "wires": [
+            [
+                "26eceab20b77ef41"
+            ]
+        ]
+    },
+    {
+        "id": "26eceab20b77ef41",
+        "type": "ui_template",
+        "z": "f288426f9292be3f",
+        "group": "0a4c11abf35fd2d7",
+        "name": "text",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    .scrollable-text {\n        width: 100%;\n        height: 300px;\n        /* Fixed maximum height */\n        overflow-y: auto;\n        /* Enable vertical scrolling */\n        overflow-x: hidden;\n        /* Prevent horizontal scrolling */\n        padding: 10px;\n        box-sizing: border-box;\n        border: 1px solid #ddd;\n        background-color: #f9f9f9;\n        font-family: Arial, sans-serif;\n        font-size: 14px;\n        white-space: pre-wrap;\n        /* Preserve whitespace and line breaks */\n    }\n</style>\n\n<div class=\"scrollable-text\" ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 830,
+        "y": 1500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0230d186806fb92b",
+        "type": "inject",
+        "z": "f288426f9292be3f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 1500,
+        "wires": [
+            [
+                "7bd27f57eba7de33"
+            ]
+        ]
+    },
+    {
+        "id": "2e9d06d5416eb650",
+        "type": "ui_button",
+        "z": "f288426f9292be3f",
+        "name": "",
+        "group": "0a4c11abf35fd2d7",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Reset auth logs",
+        "tooltip": "",
+        "color": "black",
+        "bgcolor": "red",
+        "className": "",
+        "icon": "",
+        "payload": "Logs reseted",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 120,
+        "y": 1560,
+        "wires": [
+            [
+                "22036a5095b00a39"
+            ]
+        ]
+    },
+    {
+        "id": "22036a5095b00a39",
+        "type": "file",
+        "z": "f288426f9292be3f",
+        "name": "",
+        "filename": "/home/z004ymtp/Logs/auth_log.txt",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 500,
+        "y": 1560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f9e8530c335fefd0",
+        "type": "file in",
+        "z": "f288426f9292be3f",
+        "name": "",
+        "filename": "/home/z004ymtp/Logs/file_logs.txt",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 380,
+        "y": 1240,
+        "wires": [
+            [
+                "7858eea584cc3eea"
+            ]
+        ]
+    },
+    {
+        "id": "6ef9468567fa6755",
+        "type": "inject",
+        "z": "f288426f9292be3f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 1240,
+        "wires": [
+            [
+                "f9e8530c335fefd0"
+            ]
+        ]
+    },
+    {
+        "id": "7858eea584cc3eea",
+        "type": "function",
+        "z": "f288426f9292be3f",
+        "name": "read top line",
+        "func": "// Read the incoming message containing the file content\nvar fileContent = msg.payload;\n\n// Split the file content into lines\nvar lines = fileContent.trim().split('\\n');\n\n// Extract the top line (most recent entry)\nvar topLine = lines[0];\n\n// Create a new message object with only the top line\nmsg.payload = topLine;\n\n// Return the modified message object\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 1240,
+        "wires": [
+            [
+                "114e0d1b82281df4"
+            ]
+        ]
+    },
+    {
+        "id": "114e0d1b82281df4",
+        "type": "ui_text",
+        "z": "f288426f9292be3f",
+        "group": "956a28001c053485",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "File logs",
+        "label": "Files Status",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1040,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "14080bd4cc6e57f3",
+        "type": "file in",
+        "z": "f288426f9292be3f",
+        "name": "",
+        "filename": "/home/z004ymtp/Logs/file_logs.txt",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 500,
+        "y": 1620,
+        "wires": [
+            [
+                "e045c095766a0cf3"
+            ]
+        ]
+    },
+    {
+        "id": "e045c095766a0cf3",
+        "type": "ui_template",
+        "z": "f288426f9292be3f",
+        "group": "0c3323f46ef66794",
+        "name": "text",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    .scrollable-text {\n        width: 100%;\n        height: 300px;\n        /* Fixed maximum height */\n        overflow-y: auto;\n        /* Enable vertical scrolling */\n        overflow-x: hidden;\n        /* Prevent horizontal scrolling */\n        padding: 10px;\n        box-sizing: border-box;\n        border: 1px solid #ddd;\n        background-color: #f9f9f9;\n        font-family: Arial, sans-serif;\n        font-size: 14px;\n        white-space: pre-wrap;\n        /* Preserve whitespace and line breaks */\n    }\n</style>\n\n<div class=\"scrollable-text\" ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 830,
+        "y": 1620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d045987f25566845",
+        "type": "inject",
+        "z": "f288426f9292be3f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 1620,
+        "wires": [
+            [
+                "14080bd4cc6e57f3"
+            ]
+        ]
+    },
+    {
+        "id": "553b80a90582b9f0",
+        "type": "ui_button",
+        "z": "f288426f9292be3f",
+        "name": "",
+        "group": "0c3323f46ef66794",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Reset file logs",
+        "tooltip": "",
+        "color": "black",
+        "bgcolor": "red",
+        "className": "",
+        "icon": "",
+        "payload": "Logs reseted",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 120,
+        "y": 1680,
+        "wires": [
+            [
+                "8e6c28bf7233873c"
+            ]
+        ]
+    },
+    {
+        "id": "8e6c28bf7233873c",
+        "type": "file",
+        "z": "f288426f9292be3f",
+        "name": "",
+        "filename": "/home/z004ymtp/Logs/file_logs.txt",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 500,
+        "y": 1680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ca9433d1f92a8b5d",
+        "type": "file in",
+        "z": "f288426f9292be3f",
+        "name": "",
+        "filename": "/home/z004ymtp/Logs/system_usage.txt",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 520,
+        "y": 1740,
+        "wires": [
+            [
+                "73994794a126b5db"
+            ]
+        ]
+    },
+    {
+        "id": "73994794a126b5db",
+        "type": "ui_template",
+        "z": "f288426f9292be3f",
+        "group": "4516504384f556cb",
+        "name": "text",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    .scrollable-text {\n        width: 100%;\n        height: 300px;\n        /* Fixed maximum height */\n        overflow-y: auto;\n        /* Enable vertical scrolling */\n        overflow-x: hidden;\n        /* Prevent horizontal scrolling */\n        padding: 10px;\n        box-sizing: border-box;\n        border: 1px solid #ddd;\n        background-color: #f9f9f9;\n        font-family: Arial, sans-serif;\n        font-size: 14px;\n        white-space: pre-wrap;\n        /* Preserve whitespace and line breaks */\n    }\n</style>\n\n<div class=\"scrollable-text\" ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 830,
+        "y": 1740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3eae45a03f96c99a",
+        "type": "inject",
+        "z": "f288426f9292be3f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 1740,
+        "wires": [
+            [
+                "ca9433d1f92a8b5d"
+            ]
+        ]
+    },
+    {
+        "id": "67f5d12fc4ab1e5a",
+        "type": "ui_button",
+        "z": "f288426f9292be3f",
+        "name": "",
+        "group": "4516504384f556cb",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Reset system_usage logs",
+        "tooltip": "",
+        "color": "black",
+        "bgcolor": "red",
+        "className": "",
+        "icon": "",
+        "payload": "Logs reseted",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 150,
+        "y": 1800,
+        "wires": [
+            [
+                "862569f6c237122c"
+            ]
+        ]
+    },
+    {
+        "id": "862569f6c237122c",
+        "type": "file",
+        "z": "f288426f9292be3f",
+        "name": "",
+        "filename": "/home/z004ymtp/Logs/system_usage.txt",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 520,
+        "y": 1800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a4f3321bc29ea34c",
+        "type": "OpcUa-Endpoint",
+        "endpoint": "opc.tcp://192.168.0.1:4840",
+        "secpol": "None",
+        "secmode": "None",
+        "none": true,
+        "login": false,
+        "usercert": false,
+        "usercertificate": "",
+        "userprivatekey": ""
+    },
+    {
+        "id": "3e7792b378b9e201",
+        "type": "ui_group",
+        "name": "PLC I/O Controls",
+        "tab": "10c19f1e3d69dd23",
+        "order": 2,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1bf0be44a520c5b0",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "445b6cf414ba256b",
+        "type": "ui_group",
+        "name": "Security Dashboard",
+        "tab": "10c19f1e3d69dd23",
+        "order": 3,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "956a28001c053485",
+        "type": "ui_group",
+        "name": "Logs Status",
+        "tab": "10c19f1e3d69dd23",
+        "order": 4,
+        "disp": true,
+        "width": "22",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "34c5f628c5edf8de",
+        "type": "ui_group",
+        "name": "Status Logs",
+        "tab": "fb92ea2ca1ffcb32",
+        "order": 1,
+        "disp": true,
+        "width": 15,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d513555b1be6283a",
+        "type": "ui_group",
+        "name": "Network logs",
+        "tab": "fb92ea2ca1ffcb32",
+        "order": 2,
+        "disp": true,
+        "width": 15,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0a4c11abf35fd2d7",
+        "type": "ui_group",
+        "name": "Auth logs",
+        "tab": "fb92ea2ca1ffcb32",
+        "order": 3,
+        "disp": true,
+        "width": 15,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0c3323f46ef66794",
+        "type": "ui_group",
+        "name": "File logs",
+        "tab": "fb92ea2ca1ffcb32",
+        "order": 4,
+        "disp": true,
+        "width": 15,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4516504384f556cb",
+        "type": "ui_group",
+        "name": "System usage logs",
+        "tab": "fb92ea2ca1ffcb32",
+        "order": 5,
+        "disp": true,
+        "width": 15,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "10c19f1e3d69dd23",
+        "type": "ui_tab",
+        "name": "IIoT Gateway",
+        "icon": "work",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "fb92ea2ca1ffcb32",
+        "type": "ui_tab",
+        "name": "Logs",
+        "icon": "history",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    }
+]
